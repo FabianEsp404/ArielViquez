@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Forum');
+@import url('https://fonts.googleapis.com/css?family=Crimson Text 600');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar section */
+
+body {
+    /* padding-bottom: 300px; */
+    overflow-x: hidden;
+}
+
+.body {
+    background-color: #efe6dd;
+}
+
+header {
+    background: #ffffff00;
+    position: fixed;
+    z-index: 1001;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.header2 {
+    background-color: #231f20;
+    transition: 0.5s;
+}
+.header2 .dropdown .dropdown-menu{
+    background-color: #231f20;
+}
+
+/* .header2 #logoHeader {
+    padding-top: 20%;
+    height: 90px;
+    transition: 0.5s;
+} */
+
+#logoHeader {
+    height: 100px;
+}
+
+#nav-items a {
+    font-family: "Forum";
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    line-height: normal;
+    font-size: 30px;
+    /* font-size: 20px; */
+    font-weight: bold;
+    -webkit-transition: all 500mc ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    overflow: hidden;
+}
+
+#nav-items a:hover {
+    color: white;
+    background: #bb4430;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-menu {
+    background: #ffffff00;
+    transition: 0.5s;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/fondoHome2.jpg);
+    background-position: center top;
+    background-size: cover;
+
+}
+
+/* MAIN */
+.main{
+    font-family: "Crimson Text";
+    padding-bottom: 100px;
+}
+
+main h1 {
+    text-align: center;
+    color: #bb4430;
+    font-size: 3rem;
+}
+ /* .myH1 {
+    text-align: center;
+    font-size: 2rem;
+} */
+
+/* .myP {
+    text-align: left;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-size: 20px;
+}  */
+
+@media screen and (max-width: 991px){
+    .header2{
+        padding-top: 5%;
+    }
+
+}
+/* @media all and (max-width:700px) {
+    .myP {
+        padding: 2%;
+    }
+} */
+
+/* FOOTER */
+
+footer {
+    background-color: #231f20;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.MasInfo a {
+    color: white;
+}
+
+.MasInfo a:hover,.InfoContacto a:hover {
+    text-decoration: none;
+    color: #f3dfa2;
+    font-weight: bold;
+}
+.InfoContacto p a{
+    color: #7ebdc2;
+}
+
+.MasInfo a::before {
+    content: "|";
+    font-weight: 300;
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+}
+.MasInfo .link-1::before {
+    content: none;
+    
+}
+footer h4{
+    color: #bb4430;
+}
+
+.divF{
+    background-color: #bb4430;
+    color: white;
+    padding: 3px 0;
+}
+
+.fijarHiperVinculo{
+    scroll-margin-top: 6rem;
+}
