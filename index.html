@@ -79,8 +79,8 @@
                     <div class="row">
 
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                            <img src="img/lady-justice-2388500_640.jpg" alt="Dar la mano" class="rounded img-thumbnail" style="background:#efe6dd;"
-                                style="height: auto;">
+                            <img src="img/lady-justice-2388500_640.jpg" alt="Dar la mano" class="rounded img-thumbnail"
+                                style="background:#efe6dd;" style="height: auto;">
                         </div>
 
                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -131,7 +131,8 @@
                         <br><br>
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-                                <form class="needs-validation text-left" novalidate method="POST" id="formulario" action="">
+                                <form class="needs-validation text-left" novalidate method="POST" id="formulario"
+                                    action="enviar.php">
                                     <div class="col-sm-12 mb-12">
                                         <label for="nombre">Nombre y Apellidos</label>
                                         <input name="nombre" type="text" class="form-control" id="nombre" required>
@@ -156,16 +157,17 @@
                                     </div>
                                     <div class="col-md-12 mb-12">
                                         <label for="Mensaje">Escríbenos tu consulta</label>
-                                        <textarea class="form-control" id="Mensaje"
-                                            rows="3" required></textarea>
-                                            <div class="valid-feedback">
-                                                Bien hecho
-                                            </div>
-                                            <div class="invalid-feedback">
-                                                Por favor, escriba su consulta
-                                            </div>
+                                        <textarea name="Mensaje" class="form-control" id="Mensaje" rows="3"
+                                            required></textarea>
+                                        <div class="valid-feedback">
+                                            Bien hecho
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Por favor, escriba su consulta
+                                        </div>
                                     </div>
-                                    <button id="btnCorreo" class="col-md-12 mb-12 btn btn-dark" type="submit">Enviar</button>
+                                    <button id="btnCorreo" class="col-md-12 mb-12 btn btn-dark"
+                                        type="submit">Enviar</button>
                                 </form>
                             </div>
                             <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
@@ -193,9 +195,11 @@
 
                 <div class="text-center">
                     <h4 class="text-center mb-4">Sobre nosotros</h4>
-                    <p class="text-left">Nuestro principal objetivo es asesorarle y brindarle protección jurídica en materia judicial,
-                          en temas de cobro, embargos y remates de sus propiedades de bienes muebles e inmuebles,
-                         desalojos administrativos y desahucios, sucesorios, interdictos y sumarios, incumplímientos contractuales, entre otros. </p>
+                    <p class="text-left">Nuestro principal objetivo es asesorarle y brindarle protección jurídica en
+                        materia judicial,
+                        en temas de cobro, embargos y remates de sus propiedades de bienes muebles e inmuebles,
+                        desalojos administrativos y desahucios, sucesorios, interdictos y sumarios, incumplímientos
+                        contractuales, entre otros. </p>
                 </div>
             </div>
             <!-- CENTRO -->
@@ -234,14 +238,19 @@
                     <a href="#">Derechos de autor</a>
                 </div>
             </div>
-            
+
         </div>
     </footer>
-    
+
     <div class="divF text-center">
-        <H5>©2020, Todos los derechos reservados</H5>
+        <H5 id="anio"></H5>
     </div>
-    <script src="JS/script.js"></script>
+    <SCRIPT>
+        var ano = (new Date).getFullYear();
+        $(document).ready(function () {
+            $("#anio").text("©"+ano +" Todos los derechos reservados");
+        });
+    </SCRIPT>
     <script src="JS/header.js"></script>
     <script src="JS/gMap.js"></script>
     <script src="JS/validacionContacto.js"></script>
