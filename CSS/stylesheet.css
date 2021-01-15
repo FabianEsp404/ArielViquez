@@ -9,7 +9,7 @@
 
 body {
     /* padding-bottom: 300px; */
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .body {
@@ -102,12 +102,13 @@ main h1 {
     font-size: 20px;
 }  */
 
-@media screen and (max-width: 991px){
+/*@media screen and (max-width: 991px){
     .header2{
         padding-top: 5%;
     }
 
 }
+*/
 /* @media all and (max-width:700px) {
     .myP {
         padding: 2%;
