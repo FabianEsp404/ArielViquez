@@ -9,11 +9,13 @@
 
 body {
     /* padding-bottom: 300px; */
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .body {
     background-color: #efe6dd;
+    width: 100%;
 }
 
 header {
